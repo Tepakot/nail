@@ -6,6 +6,10 @@
     <meta name="description" content="Услуги ногтевого сервиса в г. Днепродзержинск">
 	<meta name="keywords" content="">
     <link rel="stylesheet" href="css/style.css">
+	<link href="http://vjs.zencdn.net/6.6.3/video-js.css" rel="stylesheet">
+
+  <!-- If you'd like to support IE8 -->
+  <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 </head>
 <body>
 	<section id="sec1">
@@ -17,7 +21,18 @@
 			<a class="cta" href="#">Записаться на приём</a>
 		</article>
 	</section>
-	<p> lol </p>
+	<video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+    <source
+     src="http://176.104.11.111/hls/synergy_s3.m3u8"
+     type="application/x-mpegURL">
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+  </video>
+
+  <script src="http://vjs.zencdn.net/6.6.3/video.js"></script>
 	<section id="sec2">
 		<article>
 			<h2>Мои преимущества</h2>
