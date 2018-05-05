@@ -18,12 +18,12 @@
 		</article>
 	</section>
 	<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-<video id="video" width='640' height='480' controls></video>
+<video id="video" width="640" height="480" controls preload="auto"></video>
 <script>
   var video = document.getElementById('video');
   if(Hls.isSupported()) {
     var hls = new Hls();
-    hls.loadSource('https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8');
+    hls.loadSource('http://176.104.11.111/hls/synergy_s3.m3u8');
     hls.attachMedia(video);
     hls.on(Hls.Events.MANIFEST_PARSED,function() {
       video.play();
