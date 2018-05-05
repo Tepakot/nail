@@ -24,8 +24,7 @@
 	<video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
   poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
     <source
-     src="http://176.104.11.111/hls/synergy_s3.m3u8"
-     type="application/x-mpegURL">
+     src="http://176.104.11.111/hls/synergy_s3.m3u8">
     <p class="vjs-no-js">
       To view this video please enable JavaScript, and consider upgrading to a web browser that
       <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
@@ -33,6 +32,10 @@
   </video>
 
   <script src="http://vjs.zencdn.net/6.6.3/video.js"></script>
+	<script>
+		var player = videojs('example-video');
+		player.play();
+</script>
 	<section id="sec2">
 		<article>
 			<h2>Мои преимущества</h2>
